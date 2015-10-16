@@ -163,9 +163,9 @@ class kafka::server(
     $log_flush_interval_ms               = $kafka::defaults::log_flush_interval_ms,
     $log_retention_hours                 = $kafka::defaults::log_retention_hours,
     $log_retention_bytes                 = $kafka::defaults::log_retention_bytes,
+    $log_retention_check_interval_ms     = $kafka::defaults::log_retention_check_interval_ms,
     $log_segment_bytes                   = $kafka::defaults::log_segment_bytes,
 
-    $log_cleanup_interval_mins           = $kafka::defaults::log_cleanup_interval_mins,
     $log_cleanup_policy                  = $kafka::defaults::log_cleanup_policy,
 
     $metrics_properties                  = $kafka::defaults::metrics_properties,

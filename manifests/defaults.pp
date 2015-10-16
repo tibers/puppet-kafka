@@ -57,10 +57,10 @@ class kafka::defaults {
 
     $log_retention_hours                 = 168     # 1 week
     $log_retention_bytes                 = undef
+    $log_retention_check_interval_ms     = 300000 # 5 minutes
     $log_segment_bytes                   = 536870912
 
     $log_cleanup_policy                  = 'delete'
-    $log_cleanup_interval_mins           = 1
 
     $metrics_properties                  = undef
 
