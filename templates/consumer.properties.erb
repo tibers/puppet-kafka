@@ -19,5 +19,8 @@ zookeeper.session.timeout.ms=<%= @zookeeper_session_timeout_ms %>
 #consumer group id
 group.id=<%= @consumer_group_id %>
 
+# failsafe for if ZK and Kafka don't have an offset set
+auto.offset.reset=<%= @auto_offset_reset %>
+
 #consumer timeout
 #consumer.timeout.ms=5000

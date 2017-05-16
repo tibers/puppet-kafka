@@ -3,6 +3,8 @@
 #
 # == Parameters:
 
+# $auto_offset_reset                    - defaults to smallest. Sets what kafka will do if zookeeper and kafka
+#                                         do not have a valid offset value or there is disagreement
 # $enabled                              - If false, Kafka Broker Server will not be
 #                                         started.  Default: true.
 #
@@ -124,6 +126,8 @@
 
 #
 class kafka::server(
+    $auto_offset_reset                   = $kafka::defaults::auto_offset_reset,
+
     $enabled                             = true,
 
     $brokers                             = $kafka::defaults::brokers,

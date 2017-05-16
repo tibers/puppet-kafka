@@ -16,6 +16,9 @@ class kafka::defaults {
     }
     $consumers = {}
 
+    $auto_offset_reset                   = 'smallest'
+
+
     $zookeeper_hosts                     = ['localhost:2181']
     $zookeeper_connection_timeout_ms     = 6000
     $zookeeper_session_timeout_ms        = 6000
